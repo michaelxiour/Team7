@@ -94,7 +94,7 @@ public class ExitScreen implements Screen {
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
+		bgimg.dispose();
 		
 	}
 

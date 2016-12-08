@@ -71,7 +71,7 @@ public void resize(int width, int height) {
 
 	
 	public void dispose() {
-		
+		bgimg.dispose();
 	}
 	
 }

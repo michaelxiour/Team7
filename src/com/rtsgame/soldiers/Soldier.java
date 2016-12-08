@@ -19,7 +19,13 @@ public class Soldier {
 	private int slashrange;
 	
 	private ArrayList<BufferedImage[]> sprites;
+	private final int[] numFrames = {
+			1, 5, 2
+	};
 	
+	private static final int IDLE = 0;
+	private static final int WALKING = 1;
+	private static final int SLASH = 2;
 	
 	
 	public Soldier(int health){
