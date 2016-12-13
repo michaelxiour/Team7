@@ -3,7 +3,7 @@ package com.rtsgame;
 
 
 import com.badlogic.gdx.Game;
-
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import com.rtsgame.screens.MenuScreen;
@@ -15,7 +15,20 @@ public class RtsGame extends Game {
 	public static final int WIDTH = 1000;
 	public static final int HEIGHT = 1000;
 	
-	@Override
+	private SpriteBatch sb;
+	private OrthographicCamera cam;
+	private OrthographicCamera hudcam;
+	
+	public SpriteBatch getSpriteBatch() {
+		return sb;
+	}
+	public OrthographicCamera getcam(){
+		return cam;
+	}
+	public OrthographicCamera getHdCam(){
+		return hudcam;
+	}
+	
 	public void create () {
 		
 		batch = new SpriteBatch();

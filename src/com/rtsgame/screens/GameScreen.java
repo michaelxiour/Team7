@@ -5,8 +5,11 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.badlogic.gdx.utils.viewport.Viewport;
 import com.rtsgame.RtsGame;
 
 public class GameScreen implements Screen {
@@ -18,12 +21,19 @@ public class GameScreen implements Screen {
 	float x;
 	float y;
 	
+	private OrthographicCamera hudcam;
+	private OrthographicCamera gamecam;
+	private Viewport gameport;
 
 	
 	RtsGame game;
 	
 	public GameScreen (RtsGame game){
+		
 		this.game = game;
+		gamecam  = game.getcam();
+		hudcam = game.getHdCam();	
+		gameport = new FitViewport(RtsGame.WIDTH, RtsGame.HEIGHT, gamecam);
 	}
 	
 	public void show() {

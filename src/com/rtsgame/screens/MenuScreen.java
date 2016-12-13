@@ -9,14 +9,14 @@ import com.rtsgame.RtsGame;
 public class MenuScreen implements Screen{
 
 	
-	private static final int EXIT_BUTTON_WIDTH = 150;
+	private static final int EXIT_BUTTON_WIDTH = 230;
 	private static final int EXIT_BUTTON_HEIGHT = 50;
-	private static final int EXIT_BUTTON_Y = 170;
-	private static final int START_BUTTON_Y = 300;
-	private static final int HOWTOPLAY_BUTTON_Y = 250;
-	private static final int START_BUTTON_WIDTH = 150;
-	private static final int START_BUTTON_HEIGHT = 50;
-	private static final int HOWTOPLAY_BUTTON_WIDTH =150;
+	private static final int EXIT_BUTTON_Y = 75;
+	private static final int START_BUTTON_Y = 285;
+	private static final int HOWTOPLAY_BUTTON_Y = 180;
+	private static final int START_BUTTON_WIDTH = 260;
+	private static final int START_BUTTON_HEIGHT = 80;
+	private static final int HOWTOPLAY_BUTTON_WIDTH = 265;
 	private static final int HOWTOPLAY_BUTTON_HEIGHT = 50;
 	private Texture img;
 
@@ -43,7 +43,7 @@ public class MenuScreen implements Screen{
 	
 	@Override
 	public void show() {
-		img = new Texture(Gdx.files.internal("main menu without buttons.png"));
+		img = new Texture(Gdx.files.internal("main-menu.png"));
 		
 	}
 
