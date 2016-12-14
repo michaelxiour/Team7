@@ -15,19 +15,7 @@ public class RtsGame extends Game {
 	public static final int WIDTH = 1000;
 	public static final int HEIGHT = 1000;
 	
-	private SpriteBatch sb;
-	private OrthographicCamera cam;
-	private OrthographicCamera hudcam;
 	
-	public SpriteBatch getSpriteBatch() {
-		return sb;
-	}
-	public OrthographicCamera getcam(){
-		return cam;
-	}
-	public OrthographicCamera getHdCam(){
-		return hudcam;
-	}
 	
 	public void create () {
 		
